@@ -1,0 +1,31 @@
+kokonaisluku aloitus()
+{
+    kokonaisluku vuosi;
+    printf("Syötä vuosi: ");
+    scanf("%d", &vuosi);
+
+    jos(vuosi jakojaannos 4 yhta_suuri_kuin 0)
+    {
+        jos(vuosi jakojaannos 100 yhta_suuri_kuin 0)
+        {
+            jos(vuosi % 400 yhta_suuri_kuin 0)
+            {
+                printf("%d on karkausvuosi", vuosi);
+            }
+            muuten
+            {
+                printf("%d ei ole karkausvuosi", vuosi);
+            }
+        }
+        muuten
+        {
+            printf("%d on karkausvuosi", vuosi);
+        }
+    }
+    muuten
+    {
+        printf("%d ei ole karkausvuosi", vuosi);
+    }
+
+    palauta 0;
+}

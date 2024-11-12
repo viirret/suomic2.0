@@ -1,2 +1,2 @@
 # suomic2.0
-Finnish translated to C.
+Find and replace translator from suomi to C.

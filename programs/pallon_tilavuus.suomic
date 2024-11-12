@@ -1,0 +1,11 @@
+kokonaisluku aloitus() {
+    liukuluku radius, volume;
+    liukuluku PI = 3.14159265358979323846;
+
+    printf("Anna pallon koko: ");
+    scanf("%lf", &radius);
+    volume = (4.0 / 3.0) * PI * pow(radius, 3);
+    printf("Pallon tilavuus säteellä %.2f on: %.2f\n", radius, volume);
+
+    return 0;
+}
